@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run dev --prefix frontend\"",
     "server": "nodemon backend/index.ts",
+    "deploy": "npm install  && npm run build  && cd ./frontend && npm install && npm run build",
     "mount": "npm install && cd ./frontend && npm install",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
