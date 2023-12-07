@@ -4,11 +4,23 @@ This is a simple full-stack web application for managing tasks.
 
 # Run Locally
 
+### Step # 1
+
+Accept the github private repo invite that I have given you.
+
+### Step # 2
+
 For Installing all dependencies (Do this from the root of this application)
 
 ```bash
   npm run mount
 ```
+
+### Step # 3
+
+➡️ **IMPORTANT:** Create new ".env" file in the root of the application and Copy & paste all envs from ".env.example" to the ".env"
+
+### Step # 4
 
 Start the server (Do this from the root of this application)
 
@@ -31,3 +43,10 @@ Start the server (Do this from the root of this application)
 
 - **Authentication.**
 - **Frontend and Backend Validations.**
+
+<!--
+PORT = 5000
+NODE_ENV = development
+JWT_SECRET = asdfi32498zxc
+MONGO_URI="mongodb+srv://zunnoorain:...rafi56...@task0.hwclnvs.mongodb.net/sedTask?retryWrites=true&w=majority"
+-->
