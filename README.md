@@ -18,7 +18,7 @@ For Installing all dependencies (Do this from the root of this application)
 
 ### Step # 3
 
-➡️ **IMPORTANT:** Create new ".env" file in the root of the application and Copy & paste all envs from ".env.example" to the ".env"
+➡️ **IMPORTANT:** Create new ".env" file in the root of the application and Copy & paste all envs from the bottom of file "README.md" (which is present in the root and are commented) to the ".env"
 
 ### Step # 4
 
