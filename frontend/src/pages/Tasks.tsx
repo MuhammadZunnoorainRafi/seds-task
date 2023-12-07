@@ -3,6 +3,7 @@ import { useGetTaskQuery } from '../hooks/taskQueryHooks';
 import TaskUI from '../components/TaskUI';
 import { TaskStats } from '../utils/types';
 import { useAutoAnimate } from '@formkit/auto-animate/react';
+import Spinner from '../components/Spinner';
 
 function Tasks() {
   const { data, isPending } = useGetTaskQuery();
@@ -17,8 +18,8 @@ function Tasks() {
         <TaskForm />
       </div>
       {isPending ? (
-        <p>Loading...</p>
-      ) : data ? (
+        <Spinner />
+      ) : data && data.length > 0 ? (
         <div ref={parent} className="space-y-3">
           {data.map((task: TaskStats) => {
             return <TaskUI key={task._id} task={task} />;
