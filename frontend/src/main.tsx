@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import App from './App';
 import './index.css';
 import '@radix-ui/themes/styles.css';
 
@@ -11,12 +11,12 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
-import SignIn from './pages/SignIn.tsx';
-import SignUp from './pages/SignUp.tsx';
-import Tasks from './pages/Tasks.tsx';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Tasks from './pages/Tasks';
 import { Provider } from 'react-redux';
-import { store } from './store.ts';
-import Protect from './protect/RouteProtect.tsx';
+import { store } from './store';
+import Protect from './protect/RouteProtect';
 import axios from 'axios';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
